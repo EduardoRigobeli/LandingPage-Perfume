@@ -2,14 +2,14 @@
 
 Uma landing page elegante e responsiva desenvolvida para uma marca de perfumes, com foco em design sofisticado e experiência do usuário.
 
-![Status](https://img.shields.io/badge/status-em%20andamento-orange?style=flat-square)
+![Status](https://img.shields.io/badge/status-em%20concluido-gren?style=flat-square)
 ![Responsivo](https://img.shields.io/badge/responsivo-sim-10B981?style=flat-square)
 
 ---
 
 ## 🔗 Link ao vivo
 
-[Clique aqui para acessar a página](#)
+[https://essenciaprime.netlify.app/](#)
 
 ---
 
@@ -25,7 +25,7 @@ Uma landing page elegante e responsiva desenvolvida para uma marca de perfumes, 
 
 ## ✨ Funcionalidades
 
-- 🎨 Design moderno e sofisticado
+- 🎨 Design suave e luxuoso
 - 📱 Layout totalmente responsivo (mobile-first)
 - ☰ Menu hambúrguer para dispositivos móveis
 - 🖼️ Carrossel de produtos em destaque
@@ -38,11 +38,11 @@ Uma landing page elegante e responsiva desenvolvida para uma marca de perfumes, 
 ## 📁 Estrutura do projeto
 ```txt
 📦 landing-page-perfumes/
-├── 📄 index.html
 ├── 📄 README.md
-└── 📁 image/
-├── 🖼️ Inicial.jpg
-└── 🖼️ Logo.png
+└── 📁 assets/
+    └── 📄 index.html
+    └── 📄 style.css
+    └── 📄 script.js
 ```
 ---
 
