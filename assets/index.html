@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essência Prime — Haute Parfumerie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">Essência<span>·</span>Prime</a>
+  <ul class="nav-links">
+    <li><a href="#featured">Coleção</a></li>
+    <li><a href="#story">Nossa História</a></li>
+    <li><a href="#process">Processo</a></li>
+    <li><a href="#testimonials">Avaliações</a></li>
+    <li><a href="#contact">Contato</a></li>
+  </ul>
+  <a class="nav-cta" href="#featured">Explorar</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#featured" class="mob-link">Coleção</a>
+  <a href="#story" class="mob-link">Nossa História</a>
+  <a href="#process" class="mob-link">Processo</a>
+  <a href="#testimonials" class="mob-link">Avaliações</a>
+  <a href="#contact" class="mob-link">Contato</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-text">
+    <p class="hero-eyebrow">Haute Parfumerie Brasileira</p>
+    <h1 class="hero-title">A Arte de um<br><em>Aroma</em><br>Inesquecível</h1>
+    <p class="hero-sub">Criamos fragrâncias que transcendem o tempo — composições raras para quem sabe que o perfume certo é a forma mais íntima de expressão.</p>
+    <a href="#featured" class="btn-primary">Descobrir Coleção</a>
+    <a href="#story" class="btn-secondary">Nossa História</a>
+  </div>
+  <div class="hero-image">
+    <div class="bottle-wrap">
+      <!-- Frasco elegante SVG -->
+      <svg class="bottle-svg" viewBox="0 0 220 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="bodyGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#d4b87a" stop-opacity=".25"/>
+            <stop offset="40%" stop-color="#f5f0e8" stop-opacity=".7"/>
+            <stop offset="100%" stop-color="#c4b49a" stop-opacity=".4"/>
+          </linearGradient>
+          <linearGradient id="capGrad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#8c7660"/>
+            <stop offset="50%" stop-color="#b8975a"/>
+            <stop offset="100%" stop-color="#8c7660"/>
+          </linearGradient>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+            <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <!-- Cap -->
+        <rect x="78" y="10" width="64" height="54" rx="4" fill="url(#capGrad)"/>
+        <rect x="84" y="14" width="4" height="46" rx="2" fill="rgba(255,255,255,.15)"/>
+        <!-- Neck -->
+        <rect x="88" y="64" width="44" height="28" rx="2" fill="#b8975a" opacity=".8"/>
+        <rect x="88" y="88" width="44" height="4" rx="1" fill="#8c7660" opacity=".6"/>
+        <!-- Body -->
+        <rect x="40" y="92" width="140" height="268" rx="12" fill="url(#bodyGrad)" stroke="#c4b49a" stroke-width="1"/>
+        <!-- Glass sheen -->
+        <rect x="52" y="104" width="18" height="220" rx="9" fill="rgba(255,255,255,.22)"/>
+        <rect x="76" y="110" width="4" height="200" rx="2" fill="rgba(255,255,255,.1)"/>
+        <!-- Label area -->
+        <rect x="56" y="160" width="108" height="120" rx="4" fill="rgba(58,46,36,.08)" stroke="rgba(184,151,90,.4)" stroke-width=".8"/>
+        <!-- Label text mock -->
+        <text x="110" y="197" text-anchor="middle" font-family="Georgia,serif" font-size="10" font-style="italic" fill="#3a2e24" opacity=".7">Essência</text>
+        <text x="110" y="213" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="300" fill="#3a2e24" letter-spacing="3">PRIME</text>
+        <line x1="70" y1="222" x2="150" y2="222" stroke="#b8975a" stroke-width=".7"/>
+        <text x="110" y="238" text-anchor="middle" font-family="sans-serif" font-size="6.5" fill="#8c7660" letter-spacing="2">EAU DE PARFUM</text>
+        <text x="110" y="254" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#8c7660" letter-spacing="1.5">100 ML</text>
+        <!-- Bottom reflection -->
+        <ellipse cx="110" cy="356" rx="60" ry="6" fill="rgba(184,151,90,.15)" filter="url(#glow)"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- RIBBON -->
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon-track">
+    <span class="ribbon-item">Frete Grátis acima de R$300</span>
+    <span class="ribbon-item">Fragrâncias Exclusivas</span>
+    <span class="ribbon-item">Ingredientes Selecionados</span>
+    <span class="ribbon-item">Amostras Grátis</span>
+    <span class="ribbon-item">Embalagem Premium</span>
+    <span class="ribbon-item">Devolução em 30 dias</span>
+    <span class="ribbon-item">Frete Grátis acima de R$300</span>
+    <span class="ribbon-item">Fragrâncias Exclusivas</span>
+    <span class="ribbon-item">Ingredientes Selecionados</span>
+    <span class="ribbon-item">Amostras Grátis</span>
+    <span class="ribbon-item">Embalagem Premium</span>
+    <span class="ribbon-item">Devolução em 30 dias</span>
+  </div>
+</div>
+
+<!-- FEATURED -->
+<section id="featured">
+  <div class="reveal">
+    <span class="section-eyebrow">Coleção Signature</span>
+    <h2 class="section-title">Fragrâncias<br>que Definem Momentos</h2>
+  </div>
+  <div class="featured-grid">
+
+    <div class="card reveal">
+      <span class="card-badge">Mais Vendido</span>
+      <div class="card-icon">
+        <svg viewBox="0 0 100 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#d4b87a" stop-opacity=".3"/>
+              <stop offset="50%" stop-color="#f5f0e8" stop-opacity=".8"/>
+              <stop offset="100%" stop-color="#c4b49a" stop-opacity=".4"/>
+            </linearGradient>
+          </defs>
+          <rect x="34" y="4" width="32" height="24" rx="2" fill="#b8975a" opacity=".9"/>
+          <rect x="36" y="28" width="28" height="12" rx="1" fill="#c4b49a" opacity=".7"/>
+          <rect x="14" y="40" width="72" height="112" rx="8" fill="url(#g1)" stroke="#c4b49a" stroke-width=".8"/>
+          <rect x="22" y="48" width="8" height="88" rx="4" fill="rgba(255,255,255,.3)"/>
+          <rect x="24" y="68" width="52" height="56" rx="3" fill="rgba(58,46,36,.06)" stroke="rgba(184,151,90,.3)" stroke-width=".6"/>
+          <text x="50" y="92" text-anchor="middle" font-family="Georgia" font-size="6" font-style="italic" fill="#3a2e24" opacity=".7">Nuit</text>
+          <text x="50" y="104" text-anchor="middle" font-family="Georgia" font-size="8" fill="#3a2e24" letter-spacing="2">VELOURS</text>
+          <line x1="30" y1="109" x2="70" y2="109" stroke="#b8975a" stroke-width=".5"/>
+          <text x="50" y="118" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#8c7660" letter-spacing="1.5">EDP 75ML</text>
+        </svg>
+      </div>
+      <p class="card-name">Nuit Velours</p>
+      <p class="card-family">Oriental Amadeirado</p>
+      <p class="card-notes">Abertura de baunilha negra e cravo, coração de âmbar e oud, fundo de sândalo e musgo.</p>
+      <div class="card-footer">
+        <span class="card-price">R$ 489</span>
+        <button class="card-btn">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#c4b49a" stop-opacity=".25"/>
+              <stop offset="50%" stop-color="#f0ece4" stop-opacity=".8"/>
+              <stop offset="100%" stop-color="#d4b87a" stop-opacity=".35"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="50" cy="12" rx="16" ry="10" fill="#8c7660" opacity=".9"/>
+          <rect x="38" y="22" width="24" height="14" rx="1" fill="#b8975a" opacity=".7"/>
+          <ellipse cx="50" cy="50" rx="38" ry="20" fill="url(#g2)" stroke="#c4b49a" stroke-width=".8"/>
+          <rect x="12" y="50" width="76" height="98" rx="6" fill="url(#g2)" stroke="#c4b49a" stroke-width=".8"/>
+          <rect x="20" y="58" width="6" height="82" rx="3" fill="rgba(255,255,255,.25)"/>
+          <rect x="26" y="74" width="48" height="52" rx="3" fill="rgba(58,46,36,.06)" stroke="rgba(184,151,90,.3)" stroke-width=".6"/>
+          <text x="50" y="97" text-anchor="middle" font-family="Georgia" font-size="5.5" font-style="italic" fill="#3a2e24" opacity=".7">Rose</text>
+          <text x="50" y="108" text-anchor="middle" font-family="Georgia" font-size="7.5" fill="#3a2e24" letter-spacing="2">LUMIÈRE</text>
+          <line x1="30" y1="113" x2="70" y2="113" stroke="#b8975a" stroke-width=".5"/>
+          <text x="50" y="121" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#8c7660" letter-spacing="1.5">EDP 50ML</text>
+        </svg>
+      </div>
+      <p class="card-name">Rose Lumière</p>
+      <p class="card-family">Floral Aldéico</p>
+      <p class="card-notes">Rosa búlgara sobre almíscar branco, peônia e bergamota. Luminoso e feminino.</p>
+      <div class="card-footer">
+        <span class="card-price">R$ 365</span>
+        <button class="card-btn">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <span class="card-badge">Novo</span>
+      <div class="card-icon">
+        <svg viewBox="0 0 100 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g3" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#b8975a" stop-opacity=".2"/>
+              <stop offset="50%" stop-color="#faf7f2" stop-opacity=".85"/>
+              <stop offset="100%" stop-color="#8c7660" stop-opacity=".3"/>
+            </linearGradient>
+          </defs>
+          <polygon points="50,4 58,18 74,18 62,28 66,44 50,36 34,44 38,28 26,18 42,18" fill="#b8975a" opacity=".7"/>
+          <rect x="38" y="44" width="24" height="12" rx="1" fill="#c4b49a" opacity=".7"/>
+          <rect x="18" y="56" width="64" height="96" rx="32" fill="url(#g3)" stroke="#c4b49a" stroke-width=".8"/>
+          <rect x="26" y="64" width="6" height="80" rx="3" fill="rgba(255,255,255,.25)"/>
+          <rect x="28" y="80" width="44" height="50" rx="3" fill="rgba(58,46,36,.05)" stroke="rgba(184,151,90,.3)" stroke-width=".6"/>
+          <text x="50" y="102" text-anchor="middle" font-family="Georgia" font-size="5.5" font-style="italic" fill="#3a2e24" opacity=".7">Bois</text>
+          <text x="50" y="113" text-anchor="middle" font-family="Georgia" font-size="7.5" fill="#3a2e24" letter-spacing="2">SACRÉ</text>
+          <line x1="30" y1="118" x2="70" y2="118" stroke="#b8975a" stroke-width=".5"/>
+          <text x="50" y="126" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#8c7660" letter-spacing="1.5">EDP 100ML</text>
+        </svg>
+      </div>
+      <p class="card-name">Bois Sacré</p>
+      <p class="card-family">Chipre Amadeirado</p>
+      <p class="card-notes">Cedro, patchouli e vetiver formam uma base terrosa envolvida em iris e bergamota.</p>
+      <div class="card-footer">
+        <span class="card-price">R$ 540</span>
+        <button class="card-btn">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="card reveal">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g4" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#c4b49a" stop-opacity=".2"/>
+              <stop offset="50%" stop-color="#f5f0e8" stop-opacity=".8"/>
+              <stop offset="100%" stop-color="#b8975a" stop-opacity=".3"/>
+            </linearGradient>
+          </defs>
+          <rect x="36" y="4" width="28" height="18" rx="14" fill="#8c7660" opacity=".9"/>
+          <rect x="38" y="22" width="24" height="14" rx="1" fill="#c4b49a" opacity=".7"/>
+          <rect x="10" y="36" width="80" height="116" rx="10" fill="url(#g4)" stroke="#c4b49a" stroke-width=".8"/>
+          <rect x="18" y="44" width="7" height="100" rx="3.5" fill="rgba(255,255,255,.25)"/>
+          <rect x="24" y="64" width="52" height="60" rx="3" fill="rgba(58,46,36,.05)" stroke="rgba(184,151,90,.3)" stroke-width=".6"/>
+          <text x="50" y="88" text-anchor="middle" font-family="Georgia" font-size="5.5" font-style="italic" fill="#3a2e24" opacity=".7">Musc</text>
+          <text x="50" y="100" text-anchor="middle" font-family="Georgia" font-size="7" fill="#3a2e24" letter-spacing="2">CÉLESTE</text>
+          <line x1="28" y1="106" x2="72" y2="106" stroke="#b8975a" stroke-width=".5"/>
+          <text x="50" y="115" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#8c7660" letter-spacing="1.5">EDP 75ML</text>
+        </svg>
+      </div>
+      <p class="card-name">Musc Céleste</p>
+      <p class="card-family">Almiscarado Aquático</p>
+      <p class="card-notes">Almíscar branco e cashmere elevados por violeta aquática e notas cítricas limpas.</p>
+      <div class="card-footer">
+        <span class="card-price">R$ 410</span>
+        <button class="card-btn">Adicionar</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- STORY -->
+<section id="story">
+  <div class="reveal">
+    <span class="section-eyebrow">Nossa História</span>
+    <h2 class="section-title">Criados com<br>Propósito e Alma</h2>
+    <p class="section-lead">A Essência Prime nasceu da crença de que cada fragrância conta uma história. Trabalhamos com maestros perfumistas e ingredientes selecionados ao redor do mundo para criar composições que ficam na memória.</p>
+    <p class="section-lead" style="margin-top:1rem;">Do Oriente Médio ao coração da Provença, cada matéria-prima é escolhida com rigor para garantir uma experiência olfativa única e duradoura.</p>
+    <div class="story-stats">
+      <div>
+        <span class="stat-num">12+</span>
+        <span class="stat-label">Anos de Excelência</span>
+      </div>
+      <div>
+        <span class="stat-num">48</span>
+        <span class="stat-label">Fragrâncias</span>
+      </div>
+      <div>
+        <span class="stat-num">30k+</span>
+        <span class="stat-label">Clientes</span>
+      </div>
+    </div>
+  </div>
+  <div class="story-visual reveal">
+    <div class="story-ring">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="95" stroke="rgba(184,151,90,.2)" stroke-width=".5"/>
+        <!-- decorative flower/star -->
+        <g opacity=".55">
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#b8975a"/>
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#b8975a" transform="rotate(60 100 100)"/>
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#b8975a" transform="rotate(120 100 100)"/>
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#c4b49a" transform="rotate(30 100 100)"/>
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#c4b49a" transform="rotate(90 100 100)"/>
+          <ellipse cx="100" cy="55" rx="12" ry="30" fill="#c4b49a" transform="rotate(150 100 100)"/>
+        </g>
+        <circle cx="100" cy="100" r="18" fill="#3a2e24" opacity=".9"/>
+        <text x="100" y="104" text-anchor="middle" font-family="Georgia" font-size="8" font-style="italic" fill="#d4b87a" letter-spacing=".5">EP</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- COLLECTIONS -->
+<section id="collections">
+  <div class="collections-header reveal">
+    <div>
+      <span class="section-eyebrow">Universos Olfativos</span>
+      <h2 class="section-title">Nossas<br>Coleções</h2>
+    </div>
+    <a href="#contact" class="btn-primary">Ver Todas</a>
+  </div>
+  <div class="collections-grid reveal">
+
+    <div class="col-card tall" style="background:#e0d5c4;">
+      <div class="col-card-bg">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" stroke="#8c7660" stroke-width=".8"/>
+          <circle cx="50" cy="50" r="28" stroke="#8c7660" stroke-width=".6"/>
+          <circle cx="50" cy="50" r="16" fill="#8c7660" opacity=".3"/>
+        </svg>
+      </div>
+      <p class="col-tag">Clássica</p>
+      <h3 class="col-name">Les Origines</h3>
+    </div>
+
+    <div class="col-card" style="background:#ddd5c8;">
+      <div class="col-card-bg">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10 L61 40 L92 40 L67 58 L76 90 L50 72 L24 90 L33 58 L8 40 L39 40 Z" fill="#8c7660" opacity=".4"/>
+        </svg>
+      </div>
+      <p class="col-tag">Sazonais</p>
+      <h3 class="col-name">Quatres Saisons</h3>
+    </div>
+
+    <div class="col-card" style="background:#c8bfb0;">
+      <div class="col-card-bg">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,5 95,27.5 95,72.5 50,95 5,72.5 5,27.5" fill="#8c7660" opacity=".3"/>
+        </svg>
+      </div>
+      <p class="col-tag">Limitada</p>
+      <h3 class="col-name">Édition Noire</h3>
+    </div>
+
+    <div class="col-card" style="background:#d8cfc0; grid-column: 2 / span 2;">
+      <div class="col-card-bg">
+        <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="50" cy="30" rx="45" ry="25" stroke="#8c7660" stroke-width=".8"/>
+          <ellipse cx="50" cy="30" rx="30" ry="16" stroke="#8c7660" stroke-width=".6"/>
+          <ellipse cx="50" cy="30" rx="15" ry="8" fill="#8c7660" opacity=".25"/>
+        </svg>
+      </div>
+      <p class="col-tag">Exclusiva</p>
+      <h3 class="col-name">Maison Privée</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="reveal" style="max-width:500px; margin-bottom:1rem;">
+    <span class="section-eyebrow">Do Ingrediente ao Frasco</span>
+    <h2 class="section-title">O Caminho da<br>Perfeição</h2>
+  </div>
+  <div class="process-steps">
+    <div class="step reveal">
+      <p class="step-num">01</p>
+      <div class="step-line"></div>
+      <h3 class="step-title">Seleção de Ingredientes</h3>
+      <p class="step-desc">Viajamos ao redor do mundo para selecionar as matérias-primas mais raras e de maior qualidade — de rosas búlgaras a oud árabe.</p>
+    </div>
+    <div class="step reveal">
+      <p class="step-num">02</p>
+      <div class="step-line"></div>
+      <h3 class="step-title">Composição</h3>
+      <p class="step-desc">Nossos mestres perfumistas criam fórmulas exclusivas, equilibrando notas de topo, coração e fundo com precisão artesanal.</p>
+    </div>
+    <div class="step reveal">
+      <p class="step-num">03</p>
+      <div class="step-line"></div>
+      <h3 class="step-title">Maturação</h3>
+      <p class="step-desc">Cada fragrância passa por um período de maturação para que as notas se integrem e atinjam a complexidade desejada.</p>
+    </div>
+    <div class="step reveal">
+      <p class="step-num">04</p>
+      <div class="step-line"></div>
+      <h3 class="step-title">Embalagem Premium</h3>
+      <p class="step-desc">Frascos de cristal lapidados à mão e caixas em papel algodão — porque a apresentação é parte da experiência.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="reveal">
+    <span class="section-eyebrow">O Que Dizem</span>
+    <h2 class="section-title">Vozes dos<br>Nossos Clientes</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial reveal">
+      <p class="testimonial-stars">★★★★★</p>
+      <p class="testimonial-text">"Nuit Velours transformou minha noite. Recebi elogios a noite inteira — é a primeira vez que um perfume me fez sentir tão especial."</p>
+      <p class="testimonial-author">— Camila R., São Paulo</p>
+    </div>
+    <div class="testimonial reveal">
+      <p class="testimonial-stars">★★★★★</p>
+      <p class="testimonial-text">"A fixação é incrível. Aplico pela manhã e ainda consigo sentir o perfume no final do dia. Qualidade incomparável no Brasil."</p>
+      <p class="testimonial-author">— André M., Rio de Janeiro</p>
+    </div>
+    <div class="testimonial reveal">
+      <p class="testimonial-stars">★★★★★</p>
+      <p class="testimonial-text">"A embalagem chegou impecável, com uma carta personalizada. Senti que estava recebendo um presente de luxo de verdade."</p>
+      <p class="testimonial-author">— Beatriz S., Curitiba</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <span class="section-eyebrow">Fale Conosco</span>
+    <h2 class="section-title">Estamos à<br>Disposição</h2>
+    <p class="section-lead">Tem dúvidas sobre nossas fragrâncias, pedidos ou parcerias? Entre em contato — nossa equipe responde em até 24 horas.</p>
+    <div class="contact-info">
+      <div class="contact-item">
+        <span class="contact-icon">✉</span>
+        <div class="contact-detail">
+          <strong>E-mail</strong>
+          contato@essenciaprime.com.br
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">☎</span>
+        <div class="contact-detail">
+          <strong>WhatsApp</strong>
+          (11) 9 9999-8888
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">◎</span>
+        <div class="contact-detail">
+          <strong>Atendimento</strong>
+          Segunda a Sexta, 9h às 18h
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal">
+    <form class="form" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="assunto">Assunto</label>
+        <select id="assunto">
+          <option value="">Selecione um assunto</option>
+          <option value="pedido">Meu Pedido</option>
+          <option value="fragrancias">Informações sobre Fragrâncias</option>
+          <option value="parceria">Parcerias</option>
+          <option value="imprensa">Imprensa</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Escreva sua mensagem aqui..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Enviar Mensagem</button>
+      <div class="form-success" id="formSuccess">
+        ✓ &nbsp; Mensagem enviada com sucesso! Retornaremos em breve.
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Essência<span>·</span>Prime</div>
+  <div class="footer-links">
+    <a href="#featured">Coleção</a>
+    <a href="#story">Sobre</a>
+    <a href="#process">Processo</a>
+    <a href="#contact">Contato</a>
+    <a href="#">Política de Privacidade</a>
+    <a href="#">Trocas e Devoluções</a>
+  </div>
+  <p class="footer-copy">© 2025 Essência Prime. Todos os direitos reservados.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
